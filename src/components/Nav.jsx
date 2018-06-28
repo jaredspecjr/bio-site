@@ -38,12 +38,19 @@ function Nav() {
   };
   var imageStyle = {
     width: "100%",
-    height: "0%"
+  };
+
+  var imgContainer = {
+    width: "100%",
+    overflow: "hidden",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
   };
 
   return (
     <div style={myStyledNav}>
-      <div>
+      <div style={imgContainer}>
         <img style={imageStyle} src={Office}></img>
       </div>
       <div style={theStyle}>
