@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Office from "../assets/images/office.jpeg";
+import Office from "../assets/images/office2.png";
 
 function Nav() {
   var myStyledNav = {
