@@ -37,11 +37,12 @@ function Nav() {
     paddingTop: "5px"
   };
   var imageStyle = {
+    flexShrink: "0",
     width: "100%",
   };
 
   var imgContainer = {
-    width: "100%",
+    maxHeight: "800px",
     overflow: "hidden",
     display: "flex",
     flexDirection: "column",
