@@ -6,8 +6,18 @@ import NewTicketForm from "./NewTicketForm";
 import Error404 from "./Error404";
 
 function App() {
+  const background = {
+    backgroundColor: "slategray",
+  };
+
   return(
-    <div>
+    <div style={background}>
+      <style jsx global>{`
+          *{
+            margin:0;
+            padding: 0;
+          }
+        `}</style>
       <Nav/>
       <Switch>
         <Route exact path="/" component={PeopleList} />

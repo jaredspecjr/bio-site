@@ -22,10 +22,6 @@ function Nav() {
     fontFamily: "sans-serif",
   };
 
-  // var link :hover = {
-  //   color: "red",
-  // }
-
   var imageStyle = {
     flexShrink: "0",
     width: "100%",
@@ -38,19 +34,25 @@ function Nav() {
     flexDirection: "column",
     alignItems: "center"
   };
+  var heroText = {
+    zIndex: '4',
+    position: 'absolute',
+    top: '25%'
+  }
 
   return (
     <div style={myStyledNav}>
       <div style={imgContainer}>
         <img style={imageStyle} src={Office}></img>
+        <h1 style={heroText}>Hero Banner</h1>
       </div>
       <div style={links}>
         <style jsx>{`
             .red {
-              background-color: white;
+              color: black;
             }
             .red:hover {
-              background-color: red;
+              color: red;
             }
             `}</style>
         <div>
@@ -59,7 +61,6 @@ function Nav() {
         <div>
           <Link style={link} to="/newticket">Create Ticket</Link>
         </div>
-
       </div>
     </div>
   );

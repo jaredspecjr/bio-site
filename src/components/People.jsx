@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 function People(props){
   return (
     <div className="background">
-      <h3>{props.location} - {props.names}</h3>
-      <p><em>{props.issue}</em></p>
       <img src={props.image}></img>
-      <hr/>
+      <h3>{props.names}</h3>
+      <h3>{props.location}</h3>
+      <p><em>{props.issue}</em></p>
       <style jsx>{`
           .background {
-            background-color:green;
-            color:#a3c1ad;
+            background-color: lightyellow;
+            color: #655e57;
           }
         `}</style>
     </div>
