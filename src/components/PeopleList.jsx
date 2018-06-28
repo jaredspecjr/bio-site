@@ -24,6 +24,7 @@ var masterPeopleList = [
   }
 ];
 
+
 function PeopleList(){
   return (
     <div>

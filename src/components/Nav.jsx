@@ -32,13 +32,14 @@ function Nav() {
     overflow: "hidden",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
   };
+
   var heroText = {
     zIndex: '4',
     position: 'absolute',
     top: '25%'
-  }
+  };
 
   return (
     <div style={myStyledNav}>

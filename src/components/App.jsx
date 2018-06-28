@@ -7,7 +7,8 @@ import Error404 from "./Error404";
 
 function App() {
   const background = {
-    backgroundColor: "slategray",
+    // backgroundColor: "slategray",
+    backgroundImage: "url(../assets/images/office2.png)"
   };
 
   return(
