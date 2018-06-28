@@ -4,19 +4,16 @@ import Office from "../assets/images/office.jpeg";
 
 function Nav() {
   var myStyledNav = {
-
   };
 
   var theStyle = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center"
-  }
+  };
 
   var links = {
     display: "flex",
-
-
   };
 
   var link = {
@@ -40,14 +37,14 @@ function Nav() {
     paddingTop: "5px"
   };
   var imageStyle = {
-    width: "100%"
-  }
+    width: "100%",
+    height: "0%"
+  };
 
   return (
     <div style={myStyledNav}>
       <div>
         <img style={imageStyle} src={Office}></img>
-
       </div>
       <div style={theStyle}>
         <div style={links}>
