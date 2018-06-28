@@ -6,36 +6,26 @@ function Nav() {
   var myStyledNav = {
   };
 
-  var theStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center"
-  };
-
   var links = {
     display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "10px"
   };
 
   var link = {
-    paddingLeft: "20px",
-    paddingTop: "50px",
-    paddingBottom: "5px",
-    paddingRight: "20px",
-  };
-  var search = {
-    paddingRight: "15px",
-    display: "inline-block",
-
-  };
-  var inside = {
+    textAlign: "center",
+    textDecoration: "none",
     fontSize: "20px",
-    borderRadius: "20px",
-    border: "3px solid lightblue",
-    paddingLeft: "20px",
-    paddingRight: "20px",
-    paddingBottom: "5px",
-    paddingTop: "5px"
+    marginLeft: "30px",
+    color: "black",
+    fontFamily: "sans-serif",
   };
+
+  // var link :hover = {
+  //   color: "red",
+  // }
+
   var imageStyle = {
     flexShrink: "0",
     width: "100%",
@@ -54,25 +44,22 @@ function Nav() {
       <div style={imgContainer}>
         <img style={imageStyle} src={Office}></img>
       </div>
-      <div style={theStyle}>
-        <div style={links}>
-          <div style={inside}>
-            <Link to="/"><span style={link}>Home</span></Link>
-          </div>
-          <div style={inside}>
-            <Link to="/newticket"><span style={link}> Create Ticket</span></Link>
-          </div>
+      <div style={links}>
+        <style jsx>{`
+            .red {
+              background-color: white;
+            }
+            .red:hover {
+              background-color: red;
+            }
+            `}</style>
+        <div>
+          <Link style={link} to="/"><span className="red">Home</span></Link>
         </div>
         <div>
-          <div style={search}>
-            <input style={inside} placeholder="Search" />
-
-          </div>
-          <div style={search}>
-            <button style={inside}>Tweet</button>
-
-          </div>
+          <Link style={link} to="/newticket">Create Ticket</Link>
         </div>
+
       </div>
     </div>
   );
