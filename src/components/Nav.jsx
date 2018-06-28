@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Office from "../assets/images/office.jpeg";
 
 function Nav() {
   var myStyledNav = {
+
+  };
+
+  var theStyle = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center"
-  };
+  }
 
   var links = {
     display: "flex",
@@ -34,25 +39,34 @@ function Nav() {
     paddingBottom: "5px",
     paddingTop: "5px"
   };
+  var imageStyle = {
+    width: "100%"
+  }
 
   return (
     <div style={myStyledNav}>
-      <div style={links}>
-        <div style={inside}>
-          <Link to="/"><span style={link}>Home</span></Link>
-        </div>
-        <div style={inside}>
-          <Link to="/newticket"><span style={link}> Create Ticket</span></Link>
-        </div>
-      </div>
       <div>
-        <div style={search}>
-          <input style={inside} placeholder="Search" />
+        <img style={imageStyle} src={Office}></img>
 
+      </div>
+      <div style={theStyle}>
+        <div style={links}>
+          <div style={inside}>
+            <Link to="/"><span style={link}>Home</span></Link>
+          </div>
+          <div style={inside}>
+            <Link to="/newticket"><span style={link}> Create Ticket</span></Link>
+          </div>
         </div>
-        <div style={search}>
-          <button style={inside}>Tweet</button>
+        <div>
+          <div style={search}>
+            <input style={inside} placeholder="Search" />
 
+          </div>
+          <div style={search}>
+            <button style={inside}>Tweet</button>
+
+          </div>
         </div>
       </div>
     </div>
